@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Game</title>
+    <link rel="stylesheet" href="css/style-yggdra.css">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="gameBoard"></div>
+        <div id="actionMenu" class="hidden">
+            <ul>
+                <li onclick="performAction('move')">Move</li>
+                <li onclick="performAction('attack')">Attack</li>
+                <li onclick="performAction('magic')">Magic</li>
+                <li onclick="performAction('wait')">Wait</li>
+                <li onclick="performAction('back')">Back</li>
+            </ul>
+        </div>
+        <div id="turnOverlay" class="hidden">
+            <div id="turnText">TURN 01</div>
+        </div>
+    </div>
+    <script src="js/script-yggdra.js"></script>
+</body>
+</html>
